@@ -3,64 +3,294 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive, "Libre Caslon Text", serif;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+
+nav {
+  width: 100%;
+  height: 5%;
+  background-color: salmon;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+nav ul {
+  display: inline-block;
+  width: 85%;
+  height: 100%;
+}
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav img {
+  display: inline-block;
+  width: 10%;
+  height: 60%;
+}
+
+.top-content {
+  width: 100%;
+  height: 35%;
+  margin: 50px 25px 100px 25px;
+}
+
+#slogan {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.top-content h1 {
+  height: 25%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.top-content a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  display: block;
+  border: 1px solid black;
+  padding: 10px;
+  margin-left: 80px;
+  width: 50%;
+  height: 25%;
+}
+
+.top-content a:hover {
+  background-color: lightblue;
+}
+
+.top-content img {
+  display: inline-block;
+  width: 40%;
+  height: 80%;
+}
+
+.bottom-content {
+  width: 100%;
+  display: block;
+}
+
+#part1 {
+  height: 33%;
+}
+
+#feature {
+  display: inline-block;
+  width: 48%;
+  padding: 5px;
+}
+
+#about {
+  display: inline-block;
+  width: 48%;
+  padding: 5px;
+}
+
+#part2 {
+  width: 100%;
+  height: 33%;
+  margin: 40px 0;
+}
+
+#part2 img {
+  width: 98%;
+}
+
+#part3 {
+  width: 100%;
+  height: 33%;
+  margin: 40px 0px;
+}
+
+#services {
+  display: inline-block;
+  width: 32%;
+  padding: 5px;
+}
+
+#product {
+  display: inline-block;
+  width: 32%;
+  padding: 5px;
+}
+
+#vision {
+  display: inline-block;
+  width: 32%;
+  padding: 5px;
+}
+
+.contact {
+  margin: 40px 5px;
+}
+
+footer {
+  text-align: center;
+}
+
+/* service.html page */
+#service-page {
+  margin: 50px;
+}
